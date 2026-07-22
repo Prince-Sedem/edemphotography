@@ -19,7 +19,7 @@ function Navbar() {
       return;
     }
 
-    const sections = ["home", "services", "about", "contact"];
+    const sections = ["home", "about", "portfolio", "contact"];
 
     for (let i = sections.length - 1; i >= 0; i--) {
       const section = document.getElementById(sections[i]);
@@ -42,9 +42,9 @@ function Navbar() {
 
   const links = [
     { label: "Home", href: "#home", id: "home" },
-    { label: "Services", href: "#services", id: "services" },
     { label: "About", href: "#about", id: "about" },
-    { label: "Contact", href: "#contact", id: "contact" },
+    { label: "Portfolio", href: "#portfolio", id: "portfolio" },
+    { label: "Contact", href: "#footer", id: "contact" },
   ];
 
   return (
@@ -62,8 +62,8 @@ function Navbar() {
         {/* Logo */}
         <a href="#home">
           <img
-            src="/images/Fedostar-logo.png"
-            alt="Fedostar Logo"
+            src="/images/Edem-photography.png"
+            alt="Edem-photography Logo"
             className="w-28 object-contain"
           />
         </a>
@@ -80,15 +80,15 @@ function Navbar() {
                   className={`transition focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-400
                     ${
                       isActive
-                        ? "text-blue-500"
-                        : "text-gray-700 hover:text-blue-400"
+                        ? "text-red-500"
+                        : "text-gray-700 hover:text-red-400"
                     }
                   `}
                 >
                   {item.label}
 
                   <span
-                    className={`absolute left-0 -bottom-1 h-0.5 bg-blue-400 transition-all duration-300
+                    className={`absolute left-0 -bottom-1 h-0.5 bg-red-400 transition-all duration-300
                       ${isActive ? "w-full" : "w-0"}
                     `}
                   ></span>
@@ -100,7 +100,7 @@ function Navbar() {
 
         {/* Mobile Button */}
         <button
-          className="md:hidden p-2 rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-400"
+          className="md:hidden p-2 rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-red-400"
           onClick={function () {
             setIsOpen(!isOpen);
           }}
@@ -137,8 +137,8 @@ function Navbar() {
                   className={`block text-lg transition
                     ${
                       active === item.id
-                        ? "text-blue-500"
-                        : "text-gray-700 hover:text-blue-400"
+                        ? "text-red-500"
+                        : "text-gray-700 hover:text-red-400"
                     }
                   `}
                   onClick={function () {

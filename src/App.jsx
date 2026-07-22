@@ -2,10 +2,12 @@ import { useState } from 'react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
-import Services from './components/Services'
+import Portfolio from './components/Portfolio'
 import Footer from './components/Footer'
-import Contact from './components/Contact'
 import './App.css'
+import Booking from './components/Booking'
+import WhyChooseUs from './components/WhyChooseUs'
+import ScrollToTop from './components/ScrollToTop'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,9 +16,11 @@ function App() {
     <>
     <Navbar />
     <Hero />
-    <Services />
     <About />
-    <Contact />
+    <WhyChooseUs />
+    <Portfolio /> 
+    <Booking />
+    <ScrollToTop />
     <Footer />
     </>
   )
