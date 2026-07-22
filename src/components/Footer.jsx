@@ -33,7 +33,7 @@ function Footer() {
           <div>
 
             <h2 className="text-3xl font-bold mb-5">
-              Your<span className="text-red-500"> Studio</span>
+              Edem<span className="text-red-500">  Photography</span>
             </h2>
 
 
