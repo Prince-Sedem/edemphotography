@@ -73,7 +73,7 @@ function About() {
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            className="relative w-full h-[420px]"
+            className="relative w-full h-105"
           >
             {/* Main Image */}
             <img
