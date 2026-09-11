@@ -2,112 +2,142 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 function Packages() {
-  const [activeTab, setActiveTab] = useState("One Day");
+  const [activeTab, setActiveTab] = useState("Corporate Event");
 
-  // Replace this with the photographer's WhatsApp number.
-  // Include the country code without the + sign.
+  // WhatsApp number
   const whatsappNumber = "233247552111";
 
   const packages = {
-    "One Day": [
+    "Corporate Event": [
       {
-        name: "Silver",
-        price: "GH₵ 1,500",
+        name: "Within Accra",
+        price: "GH₵ 2,000 - 2,500",
         features: [
-          "6 Hours Coverage",
-          "100 Edited Photos",
+          "Professional Event Coverage",
+          "High-Quality Edited Photos",
           "Online Photo Gallery",
+          "Professional Photo Editing",
         ],
       },
       {
-        name: "Golden",
-        price: "GH₵ 2,500",
-        popular: true,
-        features: [
-          "8 Hours Coverage",
-          "200 Edited Photos",
-          "Online Photo Gallery",
-          "10 Premium Retouched Photos",
-        ],
-      },
-      {
-        name: "Diamond",
+        name: "Outside Accra",
         price: "GH₵ 3,500",
         features: [
-          "Full Day Coverage",
-          "300+ Edited Photos",
-          "Premium Photo Editing",
-          "Photo Album",
+          "Professional Event Coverage",
+          "High-Quality Edited Photos",
+          "Online Photo Gallery",
+          "Professional Photo Editing",
         ],
       },
     ],
 
-    "Two Days": [
+    "Engagements Only / Wedding Only": [
       {
-        name: "Silver",
-        price: "GH₵ 2,500",
+        name: "Within Accra",
+        price: "GH₵ 2,000 - 2,500",
         features: [
-          "2 Days Coverage",
-          "200 Edited Photos",
+          "Professional Event Coverage",
+          "High-Quality Edited Photos",
           "Online Photo Gallery",
+          "Professional Photo Editing",
         ],
       },
       {
-        name: "Golden",
+        name: "Outside Accra",
+        price: "GH₵ 3,500",
+        features: [
+          "Professional Event Coverage",
+          "High-Quality Edited Photos",
+          "Online Photo Gallery",
+          "Professional Photo Editing",
+        ],
+      },
+    ],
+
+    "Engagements + Wedding": [
+      {
+        name: "Within Accra",
         price: "GH₵ 4,000",
         popular: true,
         features: [
-          "2 Days Full Coverage",
-          "400 Edited Photos",
-          "Premium Photo Editing",
-          "20 Premium Retouched Photos",
+          "Engagement Coverage",
+          "Wedding Coverage",
+          "High-Quality Edited Photos",
+          "Online Photo Gallery",
+          "Professional Photo Editing",
         ],
       },
       {
-        name: "Diamond",
+        name: "Outside Accra",
         price: "GH₵ 5,500",
         features: [
-          "2 Days Full Coverage",
-          "600+ Edited Photos",
-          "Premium Photo Editing",
-          "Premium Photo Album",
+          "Engagement Coverage",
+          "Wedding Coverage",
+          "High-Quality Edited Photos",
+          "Online Photo Gallery",
+          "Professional Photo Editing",
         ],
       },
     ],
 
-    Birthday: [
+    "Bachelorette / Birthday Shoot": [
       {
-        name: "Birthday",
+        name: "Within Accra",
         price: "GH₵ 1,200",
         features: [
-          "4 Hours Coverage",
-          "100 Edited Photos",
+          "Professional Shoot Coverage",
+          "High-Quality Edited Photos",
           "Online Photo Gallery",
-          "5 Premium Retouched Photos",
+          "Professional Photo Editing",
+        ],
+      },
+      {
+        name: "Outside Accra",
+        price: "GH₵ 1,800",
+        features: [
+          "Professional Shoot Coverage",
+          "High-Quality Edited Photos",
+          "Online Photo Gallery",
+          "Professional Photo Editing",
         ],
       },
     ],
 
-    Wedding: [
+    Funeral: [
       {
-        name: "Wedding",
-        price: "GH₵ 4,500",
+        name: "Within Accra",
+        price: "GH₵ 2,000 - 2,500",
         features: [
-          "Full Day Wedding Coverage",
-          "500+ Edited Photos",
-          "Premium Photo Editing",
-          "Wedding Photo Album",
-          "Pre-Wedding Consultation",
+          "Professional Funeral Coverage",
+          "High-Quality Edited Photos",
+          "Online Photo Gallery",
+          "Professional Photo Editing",
+        ],
+      },
+      {
+        name: "Outside Accra",
+        price: "GH₵ 3,500",
+        features: [
+          "Professional Funeral Coverage",
+          "High-Quality Edited Photos",
+          "Online Photo Gallery",
+          "Professional Photo Editing",
         ],
       },
     ],
   };
 
-  const tabs = ["One Day", "Two Days", "Birthday", "Wedding"];
+  const tabs = [
+    "Corporate Event",
+    "Engagements Only / Wedding Only",
+    "Engagements + Wedding",
+    "Bachelorette / Birthday Shoot",
+    "Funeral",
+  ];
 
   // Creates the WhatsApp booking message
   const createWhatsAppLink = (pkg) => {
-    const message = `Hello, I’m interested in booking the ${pkg.name} Package for ${activeTab}. The package is ${pkg.price}. Please provide more details and availability.`;
+    const message = `Hello, I’m interested in booking photography services for a ${activeTab}. I’m looking at the ${pkg.name} option at ${pkg.price}. Please provide more details and availability.`;
 
     return `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
       message
@@ -173,9 +203,9 @@ function Packages() {
             exit={{ opacity: 0, y: -15 }}
             transition={{ duration: 0.3 }}
             className={`grid grid-cols-1 ${
-              packages[activeTab].length === 3
-                ? "md:grid-cols-3"
-                : "md:grid-cols-1 max-w-md mx-auto"
+              packages[activeTab].length === 2
+                ? "md:grid-cols-2 max-w-4xl mx-auto"
+                : "md:grid-cols-3"
             } gap-6`}
           >
             {packages[activeTab].map((pkg, index) => (
@@ -247,4 +277,3 @@ function Packages() {
 }
 
 export default Packages;
-
