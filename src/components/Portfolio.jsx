@@ -37,26 +37,35 @@ export default function Portfolio() {
     },
 
     {
-      title: "Fashion Photography",
+      title: "Tourism",
       images: [
-        "/images/fashion-photo1.jpg",
-        "/images/fashion-photo2.jpg",
+        "/images/airport-pickup5.jpg",
+        "/images/airport-pickup4.jpg",
+        "/images/airport-pickup3.jpg",
+        "/images/airport-pickup6.jpg",
+        "/images/airport-pickup7.jpg",
       ],
     },
 
     {
       title: "Corporate Photography",
       images: [
-        "/images/corporate-photo1.jpg",
-        "/images/corporate-photo2.jpg",
+        "/images/corporate-edem1.jpg",
+        "/images/corporate-edem5.jpg",
+        "/images/corporate-edem2.jpg",
+        "/images/corporate-edem3.jpg",
+        "/images/corporate-edem4.jpg",
       ],
     },
 
     {
-      title: "Travel Photography",
+      title: "Fashion Photography",
       images: [
-        "/images/travel-photo1.jpg",
-        "/images/travel-photo2.jpg",
+        "/images/fashion-edem2.jpg",
+        "/images/fashion-edem.jpg",
+        "/images/fashion-edem1.jpg",
+        "/images/fashion-edem3.jpg",
+        "/images/fashion-edem4.jpg",
       ],
     },
   ];
@@ -133,7 +142,7 @@ export default function Portfolio() {
               <img
                 src={item.images[0]}
                 alt={item.title}
-                className="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+                className="w-full h-full object-cover object-[center_25%] group-hover:scale-110 transition duration-700"
               />
 
 
