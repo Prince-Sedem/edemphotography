@@ -8,7 +8,12 @@ function TermsAndConditions() {
     {
       title: "Booking & Payment",
       content:
-        "A 50% deposit is required to confirm and secure your booking date. The remaining 50% balance must be paid before or on the scheduled photography date. A booking is only considered confirmed once the required deposit has been received.",
+      "A 50% deposit is required to confirm and secure your booking date. The remaining 50% balance must be paid before or on the scheduled photography date. A booking is only considered confirmed once the required deposit has been received.",
+    },
+    {
+      title: "Transportation & Accommodation",
+      content:
+        "Prices does not include transportation and accommodation.",
     },
     {
       title: "Cancellation & Refund Policy",
