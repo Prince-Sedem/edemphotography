@@ -168,7 +168,7 @@ function Packages() {
           className="text-center mb-10"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-white">
-            Photography Packages
+            Reels Packages
           </h2>
 
           <p className="text-gray-200 mt-3 max-w-xl mx-auto">
