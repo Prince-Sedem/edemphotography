@@ -15,24 +15,27 @@ export default function Portfolio() {
     {
       title: "Wedding Photography",
       images: [
-        "/images/wed-photo1.jpg",
-        "/images/wed-photo2.jpg",
+        "/images/wedding-edem3.jpg",
+        "/images/wedding-edem1.jpg",
+        "/images/wedding-edem2.jpg",
+        "/images/wedding-edem5.jpg",
+        "/images/wedding-edem4.jpg",
       ],
     },
 
     {
       title: "Portrait Sessions",
       images: [
-        "/images/portrait-photo1.jpg",
-        "/images/portrait-photo2.jpg",
+        "/images/portrait-edem2.jpg",
+        "/images/portrait-edem1.jpg",
+        "/images/portrait-edem3.jpg",
       ],
     },
 
     {
       title: "Event Photography",
       images: [
-        "/images/event-photo1.jpg",
-        "/images/event-photo2.jpg",
+        "/images/event-edem1.jpg",
       ],
     },
 

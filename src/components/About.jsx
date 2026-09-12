@@ -86,9 +86,9 @@ function About() {
             {/* Overlapping Image */}
             <img
               data-aos="zoom-out"
-              src="/images/pexels-theshuttervision-12551959.jpg"
+              src="/images/edem-about.jpg"
               alt="Professional Photographer"
-              className="absolute top-0 right-0 w-[60%] h-[80%] object-cover rounded-2xl shadow-2xl border-4 border-white"
+              className="absolute top-0 right-0 w-[60%] h-[80%] object-cover object-[center_10%] rounded-2xl shadow-2xl border-4 border-white"
             />
           </motion.div>
         </div>
